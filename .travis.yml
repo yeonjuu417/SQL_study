@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - 'stable'
+services:
+  - mysql
+before_script:
+  - mysql -u root --password="" -e 'CREATE DATABASE learnmysql;'
+  - mysql -u root --password="" < ./migrations/schema.sql
+env:
+  - DATABASE_USERNAME=root DATABASE_NAME='learnmysql'
