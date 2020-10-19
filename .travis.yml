@@ -8,3 +8,5 @@ before_script:
   - mysql -u root --password="" < ./migrations/schema.sql
 env:
   - DATABASE_USERNAME=root DATABASE_NAME='learnmysql'
+after_script:
+  - npm run submit
