@@ -8,7 +8,7 @@
     "test:part-5": "mocha __tests__/part5.test.js",
     "test": "mocha __tests__/*.test.js --sort",
     "report": "mocha __tests__/*.test.js --sort --reporter @mochajs/json-file-reporter",
-    "submit": "node .travis/submit.js"
+    "submit": "codestates-submission"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/codestates/im-sprint-learn-sql-reference#readme",
   "dependencies": {
+    "@codestates-cc/submission-npm": "^1.1.1",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
     "mysql": "^2.18.1"
